@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">testMemo</string>
+    <string name="memo">备忘录</string>
+    <string name="addmemo_hinttext">在这里输入你的内容</string>
+    <string name="action_edit">action_edit</string>
+    <string name="action_settings">action_settings</string>
+    <string name="addmemo">添加备忘录</string>
+    <string name="editmemo">编辑备忘录</string>
+    <string name="settag">设置标签</string>
+    <string name="delete">删除</string>
+    <string name="canceldelete">取消删除</string>
+    <string name="sum">共计</string>
+    <string name="travel">旅游</string>
+    <string name="person">个人</string>
+    <string name="life">生活</string>
+    <string name="work">工作</string>
+    <string name="none">无标签</string>
+    <string-array name="tags">
+        <item>@string/none</item>
+        <item>@string/travel</item>
+        <item>@string/person</item>
+        <item>@string/life</item>
+        <item>@string/work</item>
+
+    </string-array>
+
+    <string name="memo_delete">删除</string>
+    <string name="memo_copy">复制</string>
+    <string name="memo_more">更多</string>
+    <string-array name="memo_action">
+        <item>@string/memo_copy</item>
+        <item>@string/memo_delete</item>
+        <item>@string/memo_more</item>
+    </string-array>
+
+</resources>

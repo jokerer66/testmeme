@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent" >
+
+        </android.support.v7.widget.Toolbar>
+        <!--<ImageView-->
+            <!--android:id="@+id/back_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/backbutton"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/donebutton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/okbutton"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentTop="true"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/choosetag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/redpoint"/>
+            <TextView
+                android:id="@+id/lastedittime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/choosetag"
+                android:layout_alignTop="@id/choosetag"
+                android:gravity="left"/>
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/memotext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/addmemo_hinttext"
+            android:inputType="textMultiLine"
+            android:gravity="left|top"
+            android:minLines="6"/>
+    </LinearLayout>
+
+</LinearLayout>
